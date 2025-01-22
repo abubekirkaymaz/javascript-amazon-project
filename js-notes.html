@@ -1,0 +1,31 @@
+<!---->
+<html lang="en">
+<head>
+  <title>NOTES</title>
+</head>
+<body>
+  <h2>Customize Your Product</h2>
+  <p>Base Price: $20</p>
+  <form id="productForm">
+    <label>Add an extended warranty for $5</label>
+    <input type="checkbox" id="feature"></br></br>
+    <button type="button" onclick="calculateTotal()">Calculate Total</button>
+  </form>
+
+  <p id="totalPrice"></p>
+  <script>
+    function calculateTotal() {
+      let basePrice = 20;
+      let feature = document.getElementById('feature').checked;
+
+      if (feature) {
+        let total = basePrice + 5;
+        document.getElementById('totalPrice').textContent = total;
+      }
+      else {
+        document.getElementById('totalPrice').textContent = basePrice;
+      }
+    }
+  </script>
+</body>
+</html>
