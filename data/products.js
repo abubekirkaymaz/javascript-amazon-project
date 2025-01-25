@@ -1,5 +1,35 @@
 const products = [
   {
+    id: "id1",
+    image: "images/products/backpack.jpg",
+    name: "extra product-1 backpack",
+    rating: {
+      stars: 4.5,
+      count: 100
+    },
+    priceCents: 5000,
+    keywords: [
+      "deneme",
+      "product",
+      "backpack"
+    ]
+  },
+  {
+    id: "id2",
+    image: "images/products/umbrella.jpg",
+    name: "extra product-2 umbrella",
+    rating: {
+      stars: 5,
+      count: 140
+    },
+    priceCents: 2500,
+    keywords: [
+      "deneme",
+      "product",
+      "umbrella"
+    ]
+  },
+  {
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
     image: "images/products/athletic-cotton-socks-6-pairs.jpg",
     name: "Black and Gray Athletic Cotton Socks - 6 Pairs",
